@@ -1,0 +1,5 @@
+type cedevmgrd, domain, coredomain;
+type cedevmgrd_exec, system_file_type, exec_type, file_type;
+
+init_daemon_domain(cedevmgrd)
+

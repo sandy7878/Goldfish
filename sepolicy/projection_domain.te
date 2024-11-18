@@ -1,0 +1,5 @@
+type kprojection_domain, domain, coredomain;
+type kprojection_domain_exec, system_file_type, exec_type, file_type;
+
+init_daemon_domain(kprojection_domain)
+
