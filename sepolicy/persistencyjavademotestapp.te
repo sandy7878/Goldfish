@@ -1,0 +1,15 @@
+type persistencyjavademotestapp, domain;
+type persistencyjavademotestapp_exec, exec_type, vendor_file_type, file_type;
+
+app_domain(persistencyjavademotestapp)
+net_domain(persistencyjavademotestapp)
+
+allow persistencyjavademotestapp activity_service:service_manager find;
+allow persistencyjavademotestapp game_service:service_manager find;
+allow persistencyjavademotestapp gpu_service:service_manager find;
+allow persistencyjavademotestapp surfaceflinger_service:service_manager find;
+allow persistencyjavademotestapp audio_service:service_manager find;
+allow persistencyjavademotestapp content_capture_service:service_manager find;
+allow persistencyjavademotestapp hint_service:service_manager find;
+allow persistencyjavademotestapp mnt_vendor_file:dir search;
+

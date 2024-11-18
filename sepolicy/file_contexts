@@ -1,0 +1,44 @@
+#/system/bin/resize2fs   u:object_r:fsck_exec:s0
+#/system/bin/resize.f2fs   u:object_r:fsck_exec:s0
+/system_ext/bin/cedevmgrd   u:object_r:cedevmgrd_exec:s0
+/system_ext/bin/cedcmd   u:object_r:cedcmd_exec:s0
+/system/bin/ProjectionServiceCore u:object_r:kprojection_domain_exec:s0
+/system_ext/bin/com.kpit.kivi.projectionservicecore u:object_r:kprojection_domain_exec:s0
+
+
+
+#/system/bin/konfluence_map_service u:object_r:konfluence_map_domain_exec:s0
+#/system/bin/local_health_monitor_ivi  u:object_r:local_health_monitor_exec:s0
+#/system/bin/dlt-logd-converter  u:object_r:dlt_logd_converter_exec:s0
+#/system/bin/klogExtractord u:object_r:klog_extractord_exec:s0
+#/system/bin/ksoftwareupdated u:object_r:ksoftwareupdate_domain_exec:s0
+
+#/dev/block/dom0_a u:object_r:dom0_container_device:s0
+#/dev/block/cluster_a u:object_r:cluster_container_device:s0
+#/dev/block/adas_a u:object_r:adas_container_device:s0
+#/dev/kbinder u:object_r:kbinder_device:s0
+#/dev/spidev[0-9.]* u:object_r:spidev_device:s0
+
+#/dev/block/mmcblk0p32             u:object_r:kivi_persistence_device:s0
+#/dev/block/mmcblk0p33             u:object_r:kivi_persistence_device:s0
+#/dev/block/mmcblk0p34             u:object_r:kivi_log_storage_device:s0
+
+#/dev/block/mmcblk0p36             u:object_r:kivi_calibration_device:s0
+#/dev/block/mmcblk0p37             u:object_r:kivi_calibration_device:s0
+
+#/dev/cluster/run(/.*)?     u:object_r:kivi_cluster_tmpfs_file:s0
+#/dev/dom0/run(/.*)?        u:object_r:kivi_dom0_tmpfs_file:s0
+#/dev/adas/run(/.*)?       u:object_r:kivi_adas_tmpfs_file:s0
+
+#/pers/mnt-c       u:object_r:kivi_persistence_file:s0
+#/pers/mnt-wt       u:object_r:kivi_persistence_file:s0
+#/pers/mnt-c(/.*)?       u:object_r:kivi_persistence_file:s0
+#/pers/mnt-wt(/.*)?       u:object_r:kivi_persistence_file:s0
+
+/data/system/kivi(/.*)?     u:object_r:kivi_system_data_file:s0
+/data/system/kivi/devman(/.*)?     u:object_r:kivi_system_devman_data_file:s0
+
+# VHAL KPIT Impl
+/(vendor|system/vendor)/bin/hw/vendor\.kpit\.automotive\.vehicle@2\.0-service          u:object_r:vendor_kpit_automotive_vehicle_exec:s0
+#dlt logd converter
+#/(vendor|system/vendor)/bin/dlt-logd-converter  u:object_r:dlt_logd_converter_exec:s0
